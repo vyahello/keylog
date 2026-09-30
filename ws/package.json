@@ -1,0 +1,14 @@
+{
+  "name": "ws",
+  "version": "1.0.0",
+  "description": "1. Clone this code with `git clone https://github.com/vyahello/keylog.git`\r 2. Run the command `cd keylog/ws`\r 3. Run the command `python3 setup.py`. This will do the basic setup on the Ubuntu server. It installs NodeJS, Node Package Manager (NPM) and the Express web framework used by the server.\r 4. Run the command `node server.js` (or `npm start`) to start the server on port ***8080***.\r    The port is configurable via the `PORT` environment variable, e.g. `PORT=3000 node server.js`.\r 5. To run it in the background instead:\r    - Start: `nohup node server.js > server.log 2>&1 &`\r    - Follow the output: `tail -f server.log`\r    - Stop: `pkill -f 'node server.js'`",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "type": "commonjs",
+  "dependencies": {
+    "express": "^4.22.3"
+  }
+}

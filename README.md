@@ -4,6 +4,9 @@ A precise keystroke logger.
 
 **Local use only.** It captures keys on the machine it runs on, keeps everything in memory.
 
+> [!NOTE]
+> Before using a tool please launch a [Web Server](./ws) first.
+
 ## Requirements
 
 - Python 3.10+

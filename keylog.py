@@ -60,7 +60,7 @@ ALTGR_KEYS = _key_set("alt_gr")
 BACKSPACE = getattr(Key, "backspace", None)
 SPECIAL_TEXT = _special_text()
 
-# web README.md data
+# web server data
 IP = "localhost"
 PORT = "8080"
 
@@ -167,11 +167,11 @@ class WebServer:
         self._send(payload, endpoint="text")
 
     def _form_socket(self, endpoint: str) -> str:
-        """Web README.md socket url."""
+        """Web server socket url."""
         return f"http://{self._ip_address}:{self._port}/{endpoint}"
 
     def _send(self, payload: str, endpoint: str) -> None:
-        """Send keystrokes to web README.md."""
+        """Send keystrokes to web server."""
         try:
             requests.post(
                 url=self._form_socket(endpoint),
