@@ -1,0 +1,13 @@
+# Node dependencies (reinstall with `npm install`)
+node_modules/
+npm-debug.log*
+
+# Runtime log output written by the server
+logs.txt
+text_logs.txt
+raw_logs.txt
+server.log
+
+# Python bytecode cache from running setup.py
+__pycache__/
+*.pyc
